@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'theme';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--purple-500);
+}
+
+button {
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, var(--purple-200), var(--purple-100));
+    color: var(--purple-500);
+    padding: 0.8rem 1.7rem;
+    border: none;
+}
