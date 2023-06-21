@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: auto;
 
     img:first-child {
@@ -22,16 +21,28 @@ header {
         display: flex;
         list-style: none;
     }
-
-    .btn {
+    
+    .btn-section {
         display: flex;
         gap: 1rem;
 
-        .contact-btn {
+        button {
             color: var(--white);
             background: transparent;
             border: 1px solid var(--white);
         }
     }
-    
+
+    .toggleMenu {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        .toggleMenu {
+            display: block;
+        }
+        ul, .btn-section {
+            display: none;
+        }
+    }
 }

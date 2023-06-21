@@ -1,5 +1,6 @@
 <main>
-    <app-header></app-header>
+    <app-header (sidenavToggle)="handleChildEvent($event)"></app-header>
+    <app-sidenav *ngIf="shouldShowSideNav"></app-sidenav>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </main>

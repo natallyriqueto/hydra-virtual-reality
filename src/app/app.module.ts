@@ -13,6 +13,12 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { ButtonComponent } from './button/button.component';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidenavComponent } from './header/sidenav/sidenav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +30,16 @@ import { ButtonComponent } from './button/button.component';
     TechnologiesComponent,
     RegisterComponent,
     AboutComponent,
-    ButtonComponent
+    ButtonComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

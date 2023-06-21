@@ -1,0 +1,31 @@
+nav { 
+    background: var(--purple-100);
+    color: var(--purple-500);
+    position: fixed;
+    inset: 0;
+
+    width: 70%;
+
+    ul {
+        font-size: 0.75rem;
+        font-weight: bold;
+        gap: 1rem;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .btn-section {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        flex-basis: 50%;
+
+        button {
+            color: var(--white);
+            background: transparent;
+            border: 1px solid var(--white);
+        }
+    }
+}

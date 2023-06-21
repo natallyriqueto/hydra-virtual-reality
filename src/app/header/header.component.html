@@ -1,18 +1,27 @@
 <header>
+
     <div>
         <img src="../../assets/logo.svg" alt="" />
         <img src="../../assets/hydra-logo.svg" alt="" />
     </div>
-    <div>
-        <ul>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>TECHNOLOGIES</li>
-            <li>HOW TO</li>
-        </ul>
-    </div>
-    <div class="btn">
+
+    <ul>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li>TECHNOLOGIES</li>
+        <li>HOW TO</li>
+    </ul>
+
+    <div class="btn-section">
         <button class="contact-btn">CONTACT US</button>
         <app-button [title]="joinBtnTitle"></app-button>
     </div>
+
+    <mat-icon 
+        class="toggleMenu"
+        (click)="toggleSidenav()"
+    >
+    menu
+    </mat-icon>
+    
 </header>

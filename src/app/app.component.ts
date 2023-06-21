@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hydra-virtual-reality';
+  shouldShowSideNav: boolean = false;
+
+  handleChildEvent(isToggled: boolean){
+    this.shouldShowSideNav = isToggled;
+  }
 }
