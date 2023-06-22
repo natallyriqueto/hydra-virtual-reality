@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  title: string = "LET'S GET IN TOUCH";
 }

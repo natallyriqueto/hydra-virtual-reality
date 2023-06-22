@@ -1,0 +1,16 @@
+.arrow {
+    display: flex;
+    align-items: center;
+
+    .arrow-body {
+        width: 12rem;
+        height: 0.2rem;
+        background-color: var(--purple-100);
+    }
+    
+    .arrow-head {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid var(--purple-100);
+    }
+}

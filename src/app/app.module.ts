@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './header/sidenav/sidenav.component';
+import { ArrowComponent } from './arrow/arrow.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SidenavComponent } from './header/sidenav/sidenav.component';
     RegisterComponent,
     AboutComponent,
     ButtonComponent,
-    SidenavComponent
+    SidenavComponent,
+    ArrowComponent
   ],
   imports: [
     BrowserModule,
