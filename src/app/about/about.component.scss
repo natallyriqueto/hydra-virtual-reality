@@ -21,6 +21,18 @@
         flex-wrap: wrap;
     }
 
+    .grid-1, .grid-4 {
+        div {
+            strong, p {
+                font-size: 2.25rem;
+            }
+        
+            p {
+                font-family: "Montserrat Thin";
+            }
+        }
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -37,8 +49,6 @@
 
         .grid-3 {
             width: 100%;        
-            
-          
         }
 
         .arrow {
