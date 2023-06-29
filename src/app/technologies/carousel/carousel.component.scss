@@ -1,0 +1,11 @@
+.c-carousel {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+
+    img {
+        height: 50%;
+        width: 50%;
+    }
+}

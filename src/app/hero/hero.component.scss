@@ -28,7 +28,7 @@ div {
         height: auto;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
         flex-direction: column-reverse;
     }
 }

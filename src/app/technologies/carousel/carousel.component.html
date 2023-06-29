@@ -1,0 +1,18 @@
+<c-carousel [interval]="0" class="c-carousel">
+  <c-carousel-control class="control" [routerLink] direction="prev">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </c-carousel-control>
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides">
+        <img
+          [src]="slide.src"
+          alt="{{slide.title}}"
+          class="d-block w-100"
+          loading="lazy"
+        />
+      </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control class="control" [routerLink] direction="next">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </c-carousel-control>
+</c-carousel>

@@ -1,1 +1,19 @@
-<p>technologies works!</p>
+<section>
+    <div class="tech-content">
+        <img src="../../assets/tech.png" alt="woman using hydra vr"/>
+        <div class="text-content">
+            <h2>TECHNOLOGIES & HARDWARE</h2>
+            <p>USED BY HYDRA VR.</p>
+        </div>
+    </div>
+  
+    <ng-template class="tech-photos" #desktop>
+        <div class="tech-photos" >
+            <img src="../../assets/unreal-engine.png" alt="unreal engine tech logo" />
+            <img src="../../assets/unity.png" alt="unity tech logo"/>
+            <img src="../../assets/oculus.png" alt="oculus tech logo"/>
+            <img src="../../assets/vive.png" alt="vive tech logo"/>
+        </div>
+    </ng-template>
+
+    <app-carousel  *ngIf="isMobile; else desktop"></app-carousel>

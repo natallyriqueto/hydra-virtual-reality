@@ -1,1 +1,31 @@
-<p>benefits works!</p>
+<section>
+
+    <div class="text-container">
+        <div class="title-content">
+             <div>
+                <strong>WHY BUILD</strong>
+                <p>WITH HYDRA</p>
+            </div>
+            <app-arrow class="arrow"></app-arrow>
+        </div>
+    
+        <div class="text-content">
+            <p class="hydra-description">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+                nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+                quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+                lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            </p>
+        </div>    
+    </div>
+   
+    <div class="cards">
+        <div *ngFor="let card of cards">
+            <app-card
+            [title]="card.title"
+            [description]="card.description"
+            [imgName]="card.imgName"
+        ></app-card>
+        </div>
+    </div>
+    
+</section>

@@ -19,6 +19,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './header/sidenav/sidenav.component';
 import { ArrowComponent } from './arrow/arrow.component';
+import { CardComponent } from './card/card.component';
+import { CarouselComponent } from './technologies/carousel/carousel.component';
+import { CarouselModule } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { ArrowComponent } from './arrow/arrow.component';
     AboutComponent,
     ButtonComponent,
     SidenavComponent,
-    ArrowComponent
+    ArrowComponent,
+    CardComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,7 @@ import { ArrowComponent } from './arrow/arrow.component';
     MatIconModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
