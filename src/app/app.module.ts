@@ -38,7 +38,7 @@ import { CarouselModule } from '@coreui/angular';
     SidenavComponent,
     ArrowComponent,
     CardComponent,
-    CarouselComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
