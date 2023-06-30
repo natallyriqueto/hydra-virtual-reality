@@ -1,0 +1,39 @@
+footer { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li, p {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    .divider {
+        height: 10rem;
+        width: 0.2rem;
+        background: linear-gradient(to bottom, var(--purple-500), var(--purple-100), var(--purple-500));
+    }
+}
+
+@media (max-width: 768px) {
+    footer { 
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+}
