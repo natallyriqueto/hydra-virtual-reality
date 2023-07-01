@@ -6,22 +6,18 @@
     </div>
 
     <ul>
-        <li>ABOUT</li>
-        <li>SERVICES</li>
-        <li>TECHNOLOGIES</li>
-        <li>HOW TO</li>
+        <li><a href="home#about">ABOUT</a></li>
+        <li><a href="home#benefits">BENEFITS</a></li>
+        <li><a href="home#tech">TECHNOLOGIES</a></li>
     </ul>
 
-    <div class="btn-section">
+    <div class="button-section">
         <button class="contact-btn">CONTACT US</button>
-        <app-button [title]="joinBtnTitle"></app-button>
+        <a href="home#register">
+            <app-button [title]="joinBtnTitle" />
+        </a>
     </div>
 
-    <mat-icon 
-        class="toggleMenu"
-        (click)="toggleSidenav()"
-    >
-    menu
-    </mat-icon>
+    <mat-icon class="toggleMenu" (click)="toggleSidenav()"> menu </mat-icon>
     
 </header>

@@ -1,15 +1,15 @@
-<section>
+<section id="benefits">
 
-    <div class="text-container">
-        <div class="title-content">
-             <div>
-                <strong>WHY BUILD</strong>
-                <p>WITH HYDRA</p>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div>
+                <strong>BENEFITS</strong>
+                <p class="subtitle">TO HYDRA VR</p>
             </div>
             <app-arrow class="arrow"></app-arrow>
         </div>
-    
-        <div class="text-content">
+
+        <div class="grid-2">
             <p class="hydra-description">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                 nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                 quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
@@ -21,11 +21,11 @@
     <div class="cards">
         <div *ngFor="let card of cards">
             <app-card
-            [title]="card.title"
-            [description]="card.description"
-            [imgName]="card.imgName"
-        ></app-card>
+                [title]="card.title"
+                [description]="card.description"
+                [imgName]="card.imgName"
+            ></app-card>
         </div>
     </div>
     
-</section>
+</section> 

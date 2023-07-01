@@ -1,9 +1,15 @@
 .register-container {
     background: linear-gradient(to bottom, var(--purple-600), var(--purple-400), var(--purple-600));
-    padding: 2rem 10rem;
+    padding: 4rem 10rem;
     border-radius: 40px;
     text-align: center;
     margin-top: 5rem;
+
+  
+    .subtitle {
+        font-family: "Roboto Thin";
+        margin-top: 1rem;
+    }
 
     form {
         display: grid;
@@ -35,7 +41,7 @@
 
 @media (max-width: 768px) {
     .register-container {
-        padding: 1rem;
+        padding: 2rem;
 
         form {
             grid-template-columns: 1fr;

@@ -25,7 +25,7 @@ export class BenefitsComponent {
     { 
       title: "OUTDOOR", 
       description: "Vitae sapien pellentesque habitant morbinunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.",
-      imgName: "card-img-3.svg"
+      imgName: "card-img-4.svg"
     },
   ]
 }

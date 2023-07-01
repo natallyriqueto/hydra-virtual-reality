@@ -1,57 +1,65 @@
-section {
-    margin: 5rem auto;
 
-    .text-container {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-top: 5rem;        
+
+    .grid-1 {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        height: auto;
-        gap: 15rem;
-    
-        .title-content {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
+        align-items: center;
+        gap: 2rem;
+
+        div {
+            white-space: nowrap;
+        }        
+
+        strong, .subtitle {
             font-size: 2.25rem;
-
-            p {
-                font-family: "Montserrat Thin";
-            }
-        }
-
-        .text-content {
-            flex: 1;
-            flex-wrap: wrap;
         }
     
-    }
-    
-    .cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 5rem;
+        .subtitle {
+            font-family: "Roboto Thin";
+        }
     }
 }
 
+.cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    flex-wrap: wrap;        
+}
 
-
-@media (max-width: 768px) {
-    section {
-        max-width: 80%;
-
-        .text-container {
-            gap: 2rem;
-        }
-    }
-
+@media (max-width: 1400px) {
     .cards {
-        gap: 1rem;
+        justify-content: center;      
     }
 }
 
-@media (max-width: 1200px) {
-    .arrow, .hydra-description{
+@media (max-width: 900px) {
+    .grid-container {
+        gap: 2rem;
+    }
+    
+    .arrow {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+    
+    .arrow, .grid-2 {
+        display: none;
+    }  
+
+    .grid-container {
+        grid-template-columns: 1fr;
+
+        .grid-1 {
+            justify-content: center;
+        }
+    }
+
 }

@@ -20,25 +20,29 @@
         gap: 2rem;
         flex-wrap: wrap;
     }
+   
+    strong, .subtitle {
+        font-size: 2.25rem;
+    }
 
-    .grid-1, .grid-4 {
-        div {
-            strong, p {
-                font-size: 2.25rem;
-            }
-        
-            p {
-                font-family: "Montserrat Thin";
-            }
-        }
+    .subtitle {
+        font-family: "Roboto Thin";
     }
 
     img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
 
-   @media (max-width: 768px) {
+    @media (max-width: 900px) {
+        gap: 2rem;
+
+        .arrow {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
         grid-template-columns: 1fr; 
         gap: 2rem;
 
@@ -54,7 +58,20 @@
         .arrow {
             display: none;
         }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
     } 
+
+    @media (max-width: 500px) {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
 }
 
 

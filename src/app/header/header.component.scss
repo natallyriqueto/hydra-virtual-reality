@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: auto;
 
     img:first-child {
         height: 6.375rem;
@@ -22,7 +21,7 @@ header {
         list-style: none;
     }
     
-    .btn-section {
+    .button-section {
         display: flex;
         gap: 1rem;
 
@@ -37,11 +36,20 @@ header {
         display: none;
     }
 
-    @media (max-width: 768px) {
+    a {
+        color: var(--white);
+
+        &:hover {
+            color: var(--purple-100);
+        }
+    }
+
+    @media (max-width: 900px) {
         .toggleMenu {
             display: block;
         }
-        ul, .btn-section {
+    
+        ul, .button-section {
             display: none;
         }
     }

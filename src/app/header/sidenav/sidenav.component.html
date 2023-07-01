@@ -1,16 +1,19 @@
 <nav>
     <div>
-        <img src="../../assets/logo.svg" alt="" />
-        <img src="../../assets/hydra-logo.svg" alt="" />
-    </div>
-    <ul>
-        <li>ABOUT</li>
-        <li>SERVICES</li>
-        <li>TECHNOLOGIES</li>
-        <li>HOW TO</li>
-    </ul>
-    <div class="btn-section">
-        <button class="contact-btn">CONTACT US</button>
-        <app-button [title]="joinBtnTitle"></app-button>
+        <mat-icon class="close-icon">close</mat-icon>
+        <div>
+            <img src="../../assets/logo.svg" alt="" />
+            <img src="../../assets/hydra-logo.svg" alt="" />
+        </div>
+    
+        <ul>
+            <li><a href="home#about">ABOUT</a></li>
+            <li><a href="home#benefits">BENEFITS</a></li>
+            <li><a href="home#tech">TECHNOLOGIES</a></li>
+        </ul>
+    
+        <a href="home#register">
+            <app-button [title]="joinBtnTitle" />
+        </a>
     </div>
 </nav>
